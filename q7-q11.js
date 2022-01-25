@@ -58,4 +58,12 @@ const couldThrowError = () => {
   return 'success'
 }
 
+const takesAErrFunc = () =>{
+  try{
+    couldThrowError()
+  }catch(error){
+    console.log("Error try again");
+  }
+  return "an action was executed"
+}
 
